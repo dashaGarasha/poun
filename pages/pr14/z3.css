@@ -1,0 +1,48 @@
+body{
+  color: white;
+  font: 600 14px;
+}
+figure{
+    max-width: 0;
+}
+.original,
+.box{
+    border-radius: 6px;
+}
+.original{
+    background: rgb(228, 67, 129);
+    border: 1px dashed rgb(255, 204, 64);
+    float: left;
+    margin: 12px 15px;
+}
+.box{
+    background: rgb(134, 247, 255);
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    width: 95px;
+}
+.spin{
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+.spin:hover{
+    animation: spin 5s linear infinite;
+}
+@keyframes spin{
+    0% {
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.box-1{
+    transform: translateX(-10px);
+}
+.box-2{
+    transform: translateY(25%);
+}
+.box-3{
+    transform: translateY(-10, 25%);
+}

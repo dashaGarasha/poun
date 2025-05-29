@@ -1,0 +1,10 @@
+@media screen and (max-width: 800px){
+	.content{
+		background: pink;
+	}
+}
+@media screen and (max-width: 480px) and (max-width: 800px){
+	.content{
+		background: rgb(255, 0, 43);
+	}
+}
